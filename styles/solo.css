@@ -1,0 +1,35 @@
+.buttonsDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.buttonsDiv button{
+    padding: 1rem;
+    background-color:rgba(0, 0, 255, 0.219);
+    border-radius: 1rem;
+}
+.playerDiv{
+    margin-top: 4rem;
+    text-align: left;
+    margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+}
+.playerDiv i{
+    font-size: 4rem;
+}
+.playerDiv input{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+}
+.playerDiv button{
+    padding: 0.6rem;
+    background-color:rgba(0, 0, 255, 0.219);
+    border-radius: 1rem;
+}
+.playerDiv p{
+    margin-top: 1rem;
+    font-family: var(--font-subtittle);
+    font-size: 1.5rem;
+}
