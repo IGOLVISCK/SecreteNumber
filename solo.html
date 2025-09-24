@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloGame SecretNumber</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h1 class="tittle">SECRET NUMBER</h1>
+        <h2 class="subtittle">Adivinhe o número secreto!</h2>
+    </header>
+    <nav>
+        <a href="index.html">Voltar</a>
+    </nav>
+    <main  id="modeGame">
+        <h3 class="modosTitle">MODO SOLO</h3>
+        <div class="modosDiv, teste">
+            <div class="buttonsDiv">
+                <button class="btnDificuldade" id="btn1a10">1 a 10</button>
+                <button class="btnDificuldade" id="btn1a100">1 a 100</button>
+                <button class="btnDificuldade" id="btn1a100">1 a 1000</button>
+            </div>
+            <div class="resultado"><span id="txtResultado"></span></div>
+            <div class="playerDiv">
+                <i class="fa-solid fa-user-secret"></i>
+                <input type="number" placeholder="Digite o número" id="inputSolo">
+                <button id="btnChuteSolo">Enviar</button>
+                <p>Tentativas: <span id="tentativas"></span></p>
+                <p>Acertos: <span id="acertos"></span></p>
+            </div>
+
+
+        </div>
+    </main>
+ <footer id="sobre">
+    <p>&copy; Todos os direitos reservados | Página desenvolvida por um estudante de ADS | <a href="https://www.linkedin.com/in/igor-reis-9313a233b" target="_blank">Linkedin</a></p>
+</footer>
+    <script src="scripts/solo.js"></script>
+    <script src="https://kit.fontawesome.com/13b945b1e7.js" crossorigin="anonymous"></script>
+</body>
+</html>

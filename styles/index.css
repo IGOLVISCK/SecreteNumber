@@ -1,0 +1,106 @@
+@import url(assets.css);
+@import url(solo.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(104, 118, 179, 0.521);
+    height: 20rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+header h1{
+  font-family: var(--font-tittle);
+  font-size: 11rem;
+}
+header h2{
+    font-family: var(--font-subtittle);
+}
+nav{
+    display: flex;
+    gap: 5rem;
+    font-family: var(--font-nav);
+    justify-content: center;
+    margin: 3rem 0 4rem 0;
+    font-size: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    text-decoration-line: underline;
+}
+main{
+    margin-top: 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(2, 9, 43, 0.322);
+    margin: 0 25% 0 25%;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+main h3{
+    font-family: var(--font-subtittle);
+    font-size: xx-large;
+    color: white;
+}
+.modosDiv{
+    margin-top: 4rem;
+    display: flex;
+    gap: 7rem;
+    justify-content: center;
+}
+.modosDiv i{
+    font-size: 7rem;
+    color: rgb(50, 78, 78);
+}
+.modosDiv figcaption{
+    font-family: var(--font-nav);
+    font-size: 3rem;
+    color: black;
+    text-decoration: none;
+}
+.comoJogar{
+    margin: 6rem 0 6rem 3rem;
+    background-color: rgba(2, 9, 43, 0.322);
+    width: 50%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.comoJogar h3{
+    font-family: var(--font-subtittle);
+    font-size: xx-large;
+    color: black;
+}
+.comoJogar p{
+    width: 100%;
+    margin-top: 1rem;
+    font-size: medium;
+    font-family: var(--font-subtittle);
+}
+
+footer{
+    background-color: rgba(104, 118, 179, 0.521);
+    height: 10rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: center;
+    width: 100%;
+}
+footer a{
+    color: black;
+}
