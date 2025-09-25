@@ -49,3 +49,6 @@
     margin-bottom: 5rem;
     padding-bottom: 7rem;
 }
+#btn1a10:empty{
+    background-color: red;
+}
