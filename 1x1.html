@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1x1 SecretNumber</title>
     <link rel="stylesheet" href="styles/1x1.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/solo.css">
     <script src="https://kit.fontawesome.com/13b945b1e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,24 +21,30 @@
 
     <main id="modeGame">
         <h3 class="modosTitle">MODO 1x1</h3>
-
         <section class="playersDiv">
+            <div class="buttonsDiv, buttonsDiv1x1">
+                <button class="btnDificuldade btnDificuldade1x1" id="btn1a10">1 a 10</button>
+                <button class="btnDificuldade btnDificuldade1x1" id="btn1a100">1 a 100</button>
+                <button class="btnDificuldade btnDificuldade1x1" id="btn1a1000">1 a 1000</button>
+            </div>
+            <div class="resultado, resultado1x1"><span id="txtResultado"></span></div>
+            <br>
             <div class="playerBox" id="player1">
                 <i class="fa-solid fa-user"></i>
                 <h4>Jogador 1</h4>
                 <input type="number" placeholder="Palpite" id="inputPlayer1">
-                <button class="btnChute" id="btnChute1">Enviar</button>
-                <p>Tentativas: <span id="tentativas1">0</span></p>
-                <p>Acertos: <span id="acertos1">0</span></p>
+                <button class="btnChute" id="btnChutePlayer1">Enviar</button>
+                <p>Tentativas: <span id="tentativasPlayer1">0</span></p>
+                <p>Acertos: <span id="acertosPlayer1">0</span></p>
             </div>
 
             <div class="playerBox" id="player2">
                 <i class="fa-solid fa-user"></i>
                 <h4>Jogador 2</h4>
                 <input type="number" placeholder="Palpite" id="inputPlayer2">
-                <button class="btnChute" id="btnChute2">Enviar</button>
-                <p>Tentativas: <span id="tentativas2">0</span></p>
-                <p>Acertos: <span id="acertos2">0</span></p>
+                <button class="btnChute" id="btnChutePlayer2">Enviar</button>
+                <p>Tentativas: <span id="tentativasPlayer2">0</span></p>
+                <p>Acertos: <span id="acertosPlayer2">0</span></p>
             </div>
         </section>
 
@@ -46,10 +54,9 @@
             <p id="txtResultado2"></p>
         </div>
 
-        <div class="listaChutes">
+        <div class="list-tentativas">
             <h3>Chutes:</h3>
-            <div id="lista1"><strong>Jogador 1:</strong> </div>
-            <div id="lista2"><strong>Jogador 2:</strong> </div>
+            <p class="div-chutes"></p>
         </div>
     </main>
 

@@ -132,6 +132,10 @@
     border-radius: 1.5rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
+.div-chutes{
+    font-family: var(--font-subtittle);
+    font-size: x-large;
+}
 
 /* ANIMAÇÕES */
 @keyframes pulse {

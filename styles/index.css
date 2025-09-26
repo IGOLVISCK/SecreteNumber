@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
 @import url(solo.css);
 @import url(1x1.css);
+@import url(assets.css);
 * {
     margin: 0;
     padding: 0;
@@ -160,4 +161,111 @@ footer a:hover {
 @keyframes fadeInDown {
     from {opacity:0; transform: translateY(-20px);}
     to {opacity:1; transform: translateY(0);}
+}
+
+
+/* ===============================
+   RESPONSIVIDADE
+   =============================== */
+
+/* Telas até 1024px (tablets e notebooks menores) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    header h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    .modosDiv {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+/* Telas até 768px (tablets em modo retrato e celulares grandes) */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .playersDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    .playerBox {
+        width: 100%;
+        max-width: 300px;
+    }
+    .buttonsDiv,
+    .buttonsDiv1x1 {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .btnDificuldade1x1{
+        margin-bottom: 1rem;
+    }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+    }
+
+    .playerBox input {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .btnChute,
+    .btnDificuldade {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .resultado,
+    .resultado1x1 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
 }

@@ -70,7 +70,16 @@ nav a:hover {
     max-width: 1000px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
-
+.buttonsDiv1x1{
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.resultado1x1{
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
+}
 /* PLAYERS */
 .playersDiv {
     display: flex;

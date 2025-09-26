@@ -11,12 +11,16 @@ const txtResultado = document.getElementById("txtResultado");
 let tentativas = 0;
 let acertos = 0;
 
-const listaChutesHtml = document.querySelector('.list-tentativas');
+const listaChutesHtml = document.querySelector('.div-chutes');
 
+document.addEventListener('keydown', (event) => {
+  const keyName = event.key;
+  validarChute();
+});
 btnChute.addEventListener("click", function () {
     validarChute();
-    
 });
+
 
 let numeroSecreto;
 console.log('NUMERO SECRETO: ' +numeroSecreto)
@@ -46,7 +50,7 @@ dif3.addEventListener("click", function () {
     console.log("Novo número (1-1000):", numeroSecreto);
 });
 
-
+let chutesTentativa;
 
 function validarChute(){
     const valorChute = parseInt(chute.value);
@@ -64,6 +68,8 @@ function validarChute(){
     if (valorChute === numeroSecreto) {
         acertos++;
         tentativas++;
+        listaChutes.splice(0, listaChutes.length)
+        chutesTentativa = null;
         txtResultado.classList.add('resultadoCorreto');
         placarAcertos.textContent = acertos;
         placarTentativas.textContent = tentativas;
@@ -73,7 +79,6 @@ function validarChute(){
         if (nivelAtual === 3) numeroSecreto = Math.floor(Math.random() * 1000) + 1;
         console.log('NUMERO NOVO: ' +numeroSecreto)
         txtResultado.classList.remove('resultadoErrado')
-        listaChutes.splice(0, listaChutes.length)
     } else {
         tentativas++;
         placarTentativas.textContent = tentativas;
@@ -85,10 +90,16 @@ function validarChute(){
                 txtResultado.textContent = 'O número secreto é menor';
                 txtResultado.classList.remove('resultadoCorreto')
             }
+        listaChutes.push('    '+valorChute)
+        chutesTentativa = listaChutes
+        listaChutesHtml.textContent = chutesTentativa
     }
     chute.value = "";
     chute.focus();
-}       
+}      
+
+
+
 
 
 
