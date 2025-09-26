@@ -9,7 +9,7 @@
     border-radius: 1rem;
 }
 .playerDiv{
-    margin-top: 4rem;
+    margin-top: 2rem;
     text-align: left;
     margin-left: 25%;
     align-items: center;
@@ -32,4 +32,23 @@
     margin-top: 1rem;
     font-family: var(--font-subtittle);
     font-size: 1.5rem;
+}
+.resultado{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.resultadoCorreto{
+    font-family: var(--font-tittle);
+    color: green;
+}
+.resultadoErrado{
+    font-family: var(--font-tittle);
+    color: red;
+}
+#modeGame{
+    margin-bottom: 5rem;
+    padding-bottom: 7rem;
+}
+#btn1a10:empty{
+    background-color: red;
 }
