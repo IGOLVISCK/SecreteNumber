@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1x1 SecretNumber</title>
+    <link rel="stylesheet" href="styles/1x1.css">
+    <script src="https://kit.fontawesome.com/13b945b1e7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header>
+        <h1 class="tittle">SECRET NUMBER</h1>
+        <h2 class="subtittle">Desafie um amigo!</h2>
+    </header>
+
+    <nav>
+        <a href="index.html">Voltar</a>
+    </nav>
+
+    <main id="modeGame">
+        <h3 class="modosTitle">MODO 1x1</h3>
+
+        <section class="playersDiv">
+            <div class="playerBox" id="player1">
+                <i class="fa-solid fa-user"></i>
+                <h4>Jogador 1</h4>
+                <input type="number" placeholder="Palpite" id="inputPlayer1">
+                <button class="btnChute" id="btnChute1">Enviar</button>
+                <p>Tentativas: <span id="tentativas1">0</span></p>
+                <p>Acertos: <span id="acertos1">0</span></p>
+            </div>
+
+            <div class="playerBox" id="player2">
+                <i class="fa-solid fa-user"></i>
+                <h4>Jogador 2</h4>
+                <input type="number" placeholder="Palpite" id="inputPlayer2">
+                <button class="btnChute" id="btnChute2">Enviar</button>
+                <p>Tentativas: <span id="tentativas2">0</span></p>
+                <p>Acertos: <span id="acertos2">0</span></p>
+            </div>
+        </section>
+
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <p id="txtResultado1"></p>
+            <p id="txtResultado2"></p>
+        </div>
+
+        <div class="listaChutes">
+            <h3>Chutes:</h3>
+            <div id="lista1"><strong>Jogador 1:</strong> </div>
+            <div id="lista2"><strong>Jogador 2:</strong> </div>
+        </div>
+    </main>
+
+    <footer id="sobre">
+        <p>&copy; Todos os direitos reservados | Página desenvolvida por um estudante de ADS | 
+        <a href="https://www.linkedin.com/in/igor-reis-9313a233b" target="_blank">Linkedin</a></p>
+    </footer>
+
+    <script src="scripts/1x1.js"></script>
 </body>
 </html>

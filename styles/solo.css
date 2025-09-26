@@ -1,54 +1,157 @@
-.buttonsDiv{
+/* CONTAINER PRINCIPAL */
+#modeGame {
+    background: rgba(0,0,0,0.5);
+    margin: 2rem auto 5rem auto;
+    padding: 3rem;
+    border-radius: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+/* BOTOES DE DIFICULDADE */
+.buttonsDiv {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-.buttonsDiv button{
-    padding: 1rem;
-    background-color:rgba(0, 0, 255, 0.219);
-    border-radius: 1rem;
-}
-.playerDiv{
-    margin-top: 2rem;
-    text-align: left;
-    margin-left: 25%;
-    align-items: center;
     justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
-.playerDiv i{
+
+.btnDificuldade {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ffcc00, #ff6600);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnDificuldade:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.7);
+}
+
+/* DIV DO PLAYER */
+.playerDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    background: rgba(255,255,255,0.05);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    animation: fadeIn 1s ease;
+}
+
+/* ICONE DO PLAYER */
+.playerDiv i {
     font-size: 4rem;
+    color: #ffcc00;
+    transition: transform 0.3s ease;
 }
-.playerDiv input{
-    padding: 1rem;
+
+.playerDiv i:hover {
+    transform: rotate(15deg) scale(1.2);
+    color: #ffd700;
+}
+
+/* INPUT NUMERO */
+.playerDiv input {
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
-    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.2));
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.playerDiv button{
-    padding: 0.6rem;
-    background-color:rgba(0, 0, 255, 0.219);
-    border-radius: 1rem;
+
+.playerDiv input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
 }
-.playerDiv p{
-    margin-top: 1rem;
-    font-family: var(--font-subtittle);
-    font-size: 1.5rem;
+
+/* BOTAO ENVIAR */
+.playerDiv button {
+    padding: 0.8rem 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    background: linear-gradient(135deg, #00ffff, #0088ff);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,136,255,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.resultado{
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+
+.playerDiv button:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,136,255,0.7);
 }
-.resultadoCorreto{
-    font-family: var(--font-tittle);
-    color: green;
+
+/* TEXTO DAS TENTATIVAS */
+.playerDiv p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
-.resultadoErrado{
-    font-family: var(--font-tittle);
-    color: red;
+
+/* RESULTADOS */
+.resultado {
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
 }
-#modeGame{
-    margin-bottom: 5rem;
-    padding-bottom: 7rem;
+
+.resultadoCorreto {
+    color: #00ff00;
+    animation: pulse 1s infinite;
 }
-#btn1a10:empty{
-    background-color: red;
+
+.resultadoErrado {
+    color: #ff3300;
+    animation: shake 0.5s;
+}
+
+/* LISTA DE TENTATIVAS */
+.list-tentativas {
+    margin-top: 2rem;
+    background: rgba(255,255,255,0.05);
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* ANIMAÇÕES */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeInUp {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
 }
