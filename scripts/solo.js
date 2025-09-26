@@ -14,8 +14,9 @@ let acertos = 0;
 const listaChutesHtml = document.querySelector('.div-chutes');
 
 document.addEventListener('keydown', (event) => {
-  const keyName = event.key;
-  validarChute();
+  if (event.key === "Enter") {
+    validarChute();
+  }
 });
 btnChute.addEventListener("click", function () {
     validarChute();
