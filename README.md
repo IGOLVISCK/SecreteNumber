@@ -41,41 +41,6 @@ Ao acertar, o jogador pode reiniciar o jogo e tentar novamente.
 
 ---
 
-## 🚀 Como jogar
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/IGOLVISCK/SecreteNumber.git
-Acesse a pasta do projeto:
-
-bash
-Copiar código
-cd SecreteNumber
-Abra o arquivo index.html no navegador.
-
-Tente adivinhar o número secreto! 😎
-
-👉 Ou jogue direto aqui: 🎮 Acessar versão online
-
-🎥 Prévia do jogo
-<p align="center"> <img src="https://github.com/IGOLVISCK/SecreteNumber/blob/main/assets/demo.gif" alt="Demonstração do jogo" width="500px"> </p>
-🌟 Melhorias futuras
-🔢 Permitir escolher o intervalo (ex: 1 a 1000)
-
-🕹️ Adicionar níveis de dificuldade
-
-🎨 Tema escuro (dark mode)
-
-🏆 Ranking com as menores tentativas
-
-📱 Versão mobile aprimorada
-
-💬 Autor
-Igor Reis
-📫 devigorreis@gmail.com
-💼 LinkedIn
-💻 Portfólio
-🐙 GitHub
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=IGOLVISCK&color=blueviolet&style=flat-square" alt="profile views" /> </p>
 ⭐ “Desafios simples, aprendizados grandes.”
